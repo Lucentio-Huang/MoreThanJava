@@ -255,11 +255,11 @@ public Student getOne(int id) throws SQLException {
 首先我们来试试 Spring 的内置类 `org.springframework.jdbc.datasource.SimpleDriverDataSource`：
 
 ```xml
-<bean id="dateSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+<bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
     <property name="username" value="root"/>
     <property name="password" value="root"/>
     <property name="driverClass" value="com.mysql.jdbc.Driver"/>
-    <property name="url" value="jdbc://mysql://locolhost:3306/student"/>
+    <property name="url" value="jdbc://mysql://localhost:3306/student"/>
 </bean>
 ```
 
