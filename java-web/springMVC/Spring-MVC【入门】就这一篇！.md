@@ -606,7 +606,7 @@ public class User {
 public ModelAndView handleRequest(HttpServletRequest request,
 								  HttpServletResponse response) {
 	request.setAttribute("message","成功！");
-	return new ModelAndView("test1");
+	return new ModelAndView("test2");
 }
 ```
 
